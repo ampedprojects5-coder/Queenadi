@@ -1,0 +1,95 @@
+/* Queenadi Medical - Print styles */
+@media print {
+    .skip-link,
+    .header,
+    .nav,
+    .hero-scroll,
+    .btn,
+    .cta-strip,
+    .contact-map-wrap,
+    .footer-links,
+    .footer-address,
+    .hero-accent,
+    .hero-overlay {
+        display: none !important;
+    }
+
+    body {
+        background: #fff;
+        font-size: 11pt;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 2rem 0;
+        background: #fff;
+        color: #000;
+    }
+
+    .hero-content {
+        animation: none;
+    }
+
+    .hero-title,
+    .hero-subtitle,
+    .hero-motto,
+    .hero-desc,
+    .hero-tagline,
+    .hero-welcome,
+    .hero-welcome-inner {
+        color: #000 !important;
+        animation: none !important;
+    }
+
+    .hero-motto {
+        font-style: italic;
+    }
+
+    .section {
+        padding: 1.5rem 0;
+        break-inside: avoid;
+    }
+
+    .stats-bar {
+        background: #f0f0f0 !important;
+        color: #000;
+        padding: 1rem 0;
+        box-shadow: none;
+    }
+
+    .stats-value {
+        color: #b8860b;
+    }
+
+    a[href^="mailto:"]::after,
+    a[href^="tel:"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.9em;
+    }
+
+    .footer {
+        padding: 1.5rem 0;
+        background: #fff !important;
+        color: #000;
+        border-top: 1px solid #ccc;
+    }
+
+    .profile {
+        background: #fff !important;
+        color: #000 !important;
+    }
+
+    .profile .section-title,
+    .profile .section-label,
+    .profile-card-title,
+    .profile-card-text {
+        color: #000 !important;
+    }
+
+    .footer-logo,
+    .footer-motto,
+    .footer-reg,
+    .footer-copy {
+        color: #000 !important;
+    }
+}
